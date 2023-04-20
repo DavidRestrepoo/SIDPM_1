@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SIDPM_1.Views.Registrarse">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Registro de Usuario!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="txtUserName" Placeholder="Nombre de usuario" TextColor="Black"/>
+            <Entry x:Name="txtName" Placeholder="Nombre"  TextColor = "Black"/>
+            <Entry x:Name="txtLastName" Placeholder="Apellido" TextColor="Black"/>
+            <Entry x:Name="txtProgram" Placeholder="Nombre del programa" TextColor="Black"/>
+            <Entry x:Name="txtPassword" Placeholder="Contraseña" TextColor="Black"/>
+            <Button x:Name="btnRegistrar" Text="Registrar Usuario" Clicked="btnRegistrar_Clicked" TextColor="Black"/>
+            
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
