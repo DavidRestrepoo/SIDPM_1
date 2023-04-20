@@ -4,9 +4,18 @@
              x:Class="SIDPM_1.Views.Actualizar">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Actualizar Usuario!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="txtUserName" Placeholder="Nombre de usuario" TextColor="Black"/>
+            <Entry x:Name="txtName" Placeholder="Nombre"  TextColor = "Black"/>
+            <Entry x:Name="txtLastName" Placeholder="Apellido" TextColor="Black"/>
+            <Entry x:Name="txtProgram" Placeholder="Nombre del programa" TextColor="Black"/>
+            <Entry x:Name="txtPassword" Placeholder="Contraseña" TextColor="Black"/>
+            <Button x:Name="btnActualizar" Text="Actualizar Usuario" Clicked="btnActualizar_Clicked" TextColor="Black"/>
+            
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

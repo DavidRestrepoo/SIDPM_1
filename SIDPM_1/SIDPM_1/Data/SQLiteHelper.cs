@@ -51,6 +51,15 @@ namespace SIDPM_1.Data
             var user = db.Table<Registro>().FirstOrDefaultAsync(u => u.UserName == username && u.Password == password);
             return user;
         }
+
+        public  Task ActualizarUsuario(string username)
+        {
+             return db.Table<Registro>().Where(a => a.UserName == username).FirstOrDefaultAsync();
+        }
+        public Task EliminarRegistro(string username)
+        {
+            return db.Table<Registro>().DeleteAsync(u => u.UserName == username);
+        }
     }
 }
 
